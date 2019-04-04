@@ -1,2 +1,10 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<div class="container">
+    <div class="list-group">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="list-group-item list-group-item-action">Home</a>
+        <a routerLink="/profile" routerLinkActive="active" class="list-group-item list-group-item-action">Profile</a>
+        <a routerLink="/services" routerLinkActive="active" class="list-group-item list-group-item-action">Services</a>
+    </div>
+
+    <router-outlet></router-outlet>
+
+</div>
